@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Cache la partie qui dépasse */
+    height: 100vh;     /* Limite la hauteur de la page à la hauteur de la fenêtre */
+}
+
+/*
+>-------------<
+|image de fond|
+>-------------<
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/src/img/bckrndhome.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+/*
+>-----------<
+|menu vinyle|
+>-----------<
+*/
+
+.vinyle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 120%;
+    width: auto; 
+    transform: translateY(-50%); 
+}
+
+/*
+>------------<
+|liste vinyle|
+>------------<
+*/
+
+.div-droite {
+    position: absolute;
+    top: 20vh;
+    right: 5vh;
+    height: 60%;
+    width: 70vh;
+    display: flex;
+    align-items: stretch; 
+}
+
+
+.liste {
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    list-style-type: none;
+    width: 100%;
+}
+
+li {
+    color: white;
+    margin-bottom: 20px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
