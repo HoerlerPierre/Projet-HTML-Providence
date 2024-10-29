@@ -14,19 +14,57 @@
 
         <div>
             <div>
-                <img src="../../src/img/vinyle.png" class="vinyle">
+                <img id="image-anim" src="../../src/img/vinyle.png" class="vinyle">
 
                 <div class="div-right">
                     <ul>
-                        <div class="espace"><li><a><h1>blablablabla</h1></a></li></div>
+                        <div class="espace">
+                            <li>
+                                <h1 class="clickable-text"
+                                 data-url="../redirect/albums/album.html" 
+                                 onclick="redirectAndHideAll(this)">
+                                 Classement de mes albums
+                                </h1>
+                            </li>
+                        </div>
 
-                        <div class="espace2"><li><a><h1>blablablabla</h1></a></li></div>
+                        <div class="espace2">
+                            <li>
+                                <h1 class="clickable-text"
+                                data-url="../redirect/groupe/groupe.html" 
+                                onclick="redirectAndHideAll(this)">
+                                Classement de mes groupes
+                               </h1>
+                            </li>
+                        </div>
 
-                        <li><a><h1>blablablabla</h1></a></li>
+                        <li>
+                            <h1 class="clickable-text"
+                            data-url="../redirect/musique/musique.html" 
+                            onclick="redirectAndHideAll(this)">
+                            Classement de mes musiques
+                            </h1>
+                        </li>
 
-                        <div class="espace2"><li><a><h1>blablablabla</h1></a></li></div>
+                        <div class="espace2">
+                            <li>
+                                <h1 class="clickable-text"
+                                data-url="../redirect/guitare/guitare.html" 
+                                onclick="redirectAndHideAll(this)">
+                                Classement de mes guiatres
+                                </h1>
+                            </li>
+                        </div>
 
-                        <div class="espace"><li><a><h1>blablablabla</h1></a></li></div>
+                        <div class="espace">
+                            <li>
+                                <h1 class="clickable-text"
+                                data-url="../redirect/guitare/guitare.html" 
+                                onclick="redirectAndHideAll(this)">
+                                comming soon
+                                </h1>
+                            </li>
+                        </div>
                     </ul>
 
                 </div>
@@ -37,5 +75,23 @@
 
             </div>
         </div>
+
+        <script>
+            function redirectAndHideAll(clickedElement) {
+
+                const allTexts = document.querySelectorAll('.clickable-text');
+                allTexts.forEach(element => element.style.display = 'none');
+                
+                // Démarre l'animation en ajoutant la classe "move-right"
+                const image = document.getElementById('image-anim');
+                image.classList.add('move-right');
+
+                const url = clickedElement.getAttribute('data-url');
+
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 3000);
+            }
+        </script>
     </body>
 </html>

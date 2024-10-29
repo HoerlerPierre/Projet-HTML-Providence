@@ -36,7 +36,7 @@ body {
     top: 50%;
     height: 120%;
     width: auto; 
-    transform: translateY(-50%); 
+    margin-top: -60vh;
 }
 
 /*
@@ -50,17 +50,17 @@ div et placement
 */
 .espace{
     position: relative;
-    left: 10%;
+    left: 5%;
 }
 
 .espace2{
     position: relative;
-    left: 5%;
+    left: 2%;
 }
 
 .div-right {
     position: absolute;
-    top: 25vh;
+    top: 33vh;
     right: 5vh;
     height: 45%;
     width: 65vh;
@@ -78,7 +78,7 @@ div et placement
     width: 50vh;
     display: flex;
     align-items: stretch; 
-    background-color: rgb(255, 230, 0);
+
 }
 
 /*
@@ -86,8 +86,11 @@ liste
 */
 h1 {
     color: white;
-    font-size: calc(2vw + 2vh); 
-                
+    font-size: calc(1.2vw + 1.2vh); 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
 }
 
 .liste {
@@ -105,4 +108,21 @@ li {
     margin-bottom: 3vh;
 }
 
+/*
+>-------------<
+|class pour js|
+>-------------<
+*/
 
+.clickable-text {
+    cursor: pointer;
+    color: rgb(0, 255, 98);
+}
+
+#image-anim { 
+    transition: transform 3s;
+}
+
+.move-right {
+    transform: translateX(300px);
+}
