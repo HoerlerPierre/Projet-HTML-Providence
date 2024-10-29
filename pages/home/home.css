@@ -45,33 +45,64 @@ body {
 >------------<
 */
 
-.div-droite {
-    position: absolute;
-    top: 20vh;
-    right: 5vh;
-    height: 60%;
-    width: 70vh;
-    display: flex;
-    align-items: stretch; 
+/*
+div et placement
+*/
+.espace{
+    position: relative;
+    left: 10%;
 }
 
+.espace2{
+    position: relative;
+    left: 5%;
+}
+
+.div-right {
+    position: absolute;
+    top: 25vh;
+    right: 5vh;
+    height: 45%;
+    width: 65vh;
+    display: flex;
+    align-items: stretch; 
+
+}
+
+
+.div-cnt {
+    position: absolute;
+    top: 80vh;
+    right: 5vh;
+    height: 15%;
+    width: 50vh;
+    display: flex;
+    align-items: stretch; 
+    background-color: rgb(255, 230, 0);
+}
+
+/*
+liste
+*/
+h1 {
+    color: white;
+    font-size: calc(2vw + 2vh); 
+                
+}
 
 .liste {
     position: absolute;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
     list-style-type: none;
     width: 100%;
 }
 
 li {
+    list-style-type: none;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
 }
 
-li:last-child {
-    margin-bottom: 0;
-}
 
