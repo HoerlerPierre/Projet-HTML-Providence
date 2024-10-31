@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="album.css">
+    </head>
+    <body>
+        <h1 class="txtcentre">Sélectionnez votre catégorie dans les sections étiquetées</h1>
+
+
+        <img src="../../../src/img/album/lecteur.png" class="img-lect">
+
+        <div class="box">
+            <div class="cat1">
+                <button class="etiq" onclick="afficherDiv('com')">Commercial</button>
+            </div>
+
+
+            <div class="cat2">
+                <button class="etiq" onclick="afficherDiv('flm')">Films</button>
+            </div>
+
+
+            <div class="cat3">
+                <button class="etiq" onclick="afficherDiv('jeu')">Jeux</button>
+            </div>
+
+        </div>
+
+        <div id="com" class="selec">
+            com
+        </div>
+
+        <div id="flm" class="selec">
+            flm
+        </div>
+
+        <div id="jeu" class="selec">
+            jeu
+        </div>
+    
+        <script src="albm.js"></script>
+    </body>
+</html>

@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+/*
+>--------------<
+|vidéo & bouton|
+>--------------<
+*/
+
+>>>>>>> e352f93 (changement de serveur)
 *{
     padding: 0;
     margin: 0;
@@ -59,3 +68,26 @@
         height: 100%;
     }
 }
+<<<<<<< HEAD
+=======
+
+/*
+>------------<
+|texte en bas|
+>------------<
+*/
+
+.prenom {
+    position: absolute;
+    text-align: center;
+    bottom: 2vh;
+    color: white;
+}
+
+.info {
+    position: absolute;
+    bottom: 2vh;
+    right: 1vw;
+    color: white;
+}
+>>>>>>> e352f93 (changement de serveur)
