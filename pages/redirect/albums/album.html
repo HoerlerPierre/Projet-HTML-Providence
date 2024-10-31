@@ -22,7 +22,7 @@
 
 
             <div class="cat2">
-                <button class="etiq" onclick="afficherDiv('flm')">Films</button>
+                <button class="etiq" onclick="afficherDiv('flm')">Films / serie</button>
             </div>
 
 
@@ -33,15 +33,60 @@
         </div>
 
         <div id="com" class="selec">
-            com
+            <div class="albm-g">
+                <img src="../../../src/img/album/com/megadeth.jpg" class="albsize" data-music="music/com/peace.mp3" data-artist="Megadeth" data-titre="Peace sell" data-album="Peace sell, but who buying ?"></img>
+            </div>
+
+            <div class="albm-m">
+                <img src="../../../src/img/album/com/Hypnoflip-invasion.jpg" class="albsize" data-music="music/com/stup.mp3" data-artist="Stupeflip" data-album="Hypnoflip invasion" data-titre="Stupeflip vite !!!"></img>
+            </div>
+
+            <div class="albm-d">
+                <img src="../../../src/img/album/com/shall.jpg" class="albsize" data-music="music/com/born.mp3" data-artist="Apollo Sunshine" data-album="Shall Noise Upon" data-titre="We are born when we die"></img>
+            </div>
         </div>
 
         <div id="flm" class="selec">
-            flm a
+            <div class="albm-g">
+                <img src="../../../src/img/album/flm/whiplash.jpg" class="albsize" data-music="music/flm/whi.mp3" data-artist="John Wasson" data-album="Whiplash" data-titre="Caravan"></img>
+            </div>
+
+            <div class="albm-m">
+                <img src="../../../src/img/album/flm/mrrobot.jpg" class="albsize" data-music="music/flm/robot.mp3" data-artist="Mac Quayle" data-album="Mr Robot" data-titre="1.0_3-fucksociety.mp3"></img>
+            </div>
+
+            <div class="albm-d">
+                <img src="../../../src/img/album/flm/interstellar.jpg" class="albsize" data-music="music/flm/int.mp3"  data-artist="Hans Zimmer" data-album="Interstellar" data-titre="Day one"></img>
+            </div>
         </div>
 
         <div id="jeu" class="selec">
-            jeu
+            <div class="albm-g">
+                <img src="../../../src/img/album/jeu/skyrim.jpg" class="albsize" data-music="music/jeux/Awake.mp3" data-artist="Jeremy Soule" data-album="Skyrim" data-titre="Awake"></img>
+            </div>
+
+            <div class="albm-m">
+                <img src="../../../src/img/album/jeu/mc.jpg" class="albsize" data-music="music/jeux/mc.mp3" data-artist="C148" data-album="Minecraft - Volume Aplha" data-titre="Dry Hands"></img>
+            </div>
+
+            <div class="albm-d">
+                <img src="../../../src/img/album/jeu/doom.jpg" class="albsize" data-music="music/jeux/doom.mp3" data-artist="Mick Gordon" data-album="Doom Eternal" data-titre="Cultist base"></img>
+            </div>
+        </div>
+
+
+        <div class="playbar">
+            <button id="playButton" class="navbut">Play</button>
+            <button id="volumeUpButton" class="navbut">Volume +</button>
+            <button id="volumeDownButton" class="navbut">Volume -</button>
+            <button id="stopButton" class="navbut">Stop</button>
+            <audio id="audioPlayer"></audio>
+        </div>
+
+        <div class="artiste">
+            <p id="artistName">Artiste: -</p>
+            <p id="albumName">Album: -</p>
+            <p id="songTitle">Titre: -</p>
         </div>
     
         <script src="albm.js"></script>

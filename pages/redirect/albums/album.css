@@ -101,5 +101,92 @@ body {
     background-color: rgba(49, 49, 49, 0.767);
     width: 50%;
     height: 45%;
+    z-index: 1000;
+    
+}
+
+.albm-g{
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+    width: 28.3%;
+    height: 80%;
     z-index: 100;
+}
+
+.albm-m{
+    position: absolute;
+    top: 10%;
+    left: 35.8%;
+    width: 28.3%;
+    height: 80%;
+    z-index: 100;
+}
+
+.albm-d{
+    position: absolute;
+    top: 10%;
+    right: 2.5%;
+    width: 28.3%;
+    height: 80%;
+    z-index: 100;
+}
+
+.albsize{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 90%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+
+
+.albsize.selected {
+    border: 2px solid blue;
+}
+
+/*
+>------------<
+|musique play|
+>------------<
+*/
+
+.playbar{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 5%;
+    padding: 10px;
+    top: 79%;
+    left: 36%;
+    position: fixed;
+    height: 7%;
+    width: 28.5%;
+}
+
+.navbut{
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/*
+>------------<
+|info artiste|
+>------------<
+*/
+
+.artiste{
+    left: 3%;
+    top: 30%;
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    background-color: rgba(49, 49, 49, 0.767);
+}
+
+p{
+    color: white;
 }
