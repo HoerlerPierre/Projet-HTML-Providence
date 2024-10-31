@@ -17,7 +17,7 @@ const volumeUpButton = document.getElementById('volumeUpButton');
 const volumeDownButton = document.getElementById('volumeDownButton');
 const audioPlayer = document.getElementById('audioPlayer');
 
-audioPlayer.volume = 0.1;
+audioPlayer.volume = 0.2;
 
 // nom des artistes
 imageBoxes.forEach(box => {

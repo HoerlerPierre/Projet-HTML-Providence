@@ -1,15 +1,9 @@
 body, html {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    overflow: hidden; /* Cache la partie qui dépasse */
-    height: 100vh;     /* Limite la hauteur de la page à la hauteur de la fenêtre */
-}
-=======
     overflow: hidden;
     height: 100vh;    
  }
->>>>>>> e352f93 (changement de serveur)
 
 /*
 >-------------<
@@ -67,20 +61,11 @@ div et placement
 .div-right {
     position: absolute;
     top: 33vh;
-<<<<<<< HEAD
-    right: 5vh;
-    height: 45%;
-    width: 65vh;
-    display: flex;
-    align-items: stretch; 
-
-=======
     right: 0vh;
     height: 45%;
     width: 70vh;
     display: flex;
     align-items: stretch; 
->>>>>>> e352f93 (changement de serveur)
 }
 
 
@@ -99,10 +84,6 @@ div et placement
 liste
 */
 h1 {
-<<<<<<< HEAD
-    color: white;
-=======
->>>>>>> e352f93 (changement de serveur)
     font-size: calc(1.2vw + 1.2vh); 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -110,14 +91,11 @@ h1 {
     transition: opacity 0.5s ease;
 }
 
-<<<<<<< HEAD
-=======
 h1:hover {
     font-size: calc(1.3vw + 1.3vh); 
     color: rgb(253, 253, 253);
 }
 
->>>>>>> e352f93 (changement de serveur)
 .liste {
     position: absolute;
     color: white;
@@ -141,11 +119,7 @@ li {
 
 .clickable-text {
     cursor: pointer;
-<<<<<<< HEAD
-    color: rgb(0, 255, 98);
-=======
     color: rgb(136, 136, 136);
->>>>>>> e352f93 (changement de serveur)
 }
 
 #image-anim { 
