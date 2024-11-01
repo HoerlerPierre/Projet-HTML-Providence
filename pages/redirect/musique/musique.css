@@ -1,0 +1,199 @@
+/*
+>----------------------<
+|image de fond & retour|
+>----------------------<
+*/
+
+.retour{
+    background-color: rgb(49, 49, 49);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/src/img/msicbck.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+/*
+>----<
+|ipod|
+>----<
+*/
+
+.ipodplace{
+    position: absolute;
+    left: 40vw;
+    bottom: 2vh;
+}
+
+.ipodsize{
+    width: 20vw;
+    height: auto;
+}
+
+/*
+>------<
+|screen|
+>------<
+*/
+
+.screen{
+    position: absolute;
+    background-color: white;
+    height: 38%;
+    width: 85%;
+    left: 8%;
+    top: 7%;
+    border-radius: 5%;
+}
+
+.vinyle{
+    position: absolute;
+    height: 70%;
+    bottom: 0%;
+    left: 23.5%;
+}
+
+/*
+>------------<
+|info artiste|
+>------------<
+*/
+
+.artiste{
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    top: 1%;
+}
+
+/*
+>-------<
+|musique|
+>-------<
+*/
+
+.boxmusicalltime{
+    position: absolute;
+    background-color: rgba(49, 49, 49, 0.8);
+    height: 90%;
+    width: 30%;
+    top: 7.5%;
+    left: 2%;
+    border-radius: 2%;
+}
+
+.boxmusimoment{
+    position: absolute;
+    background-color: rgba(49, 49, 49, 0.8);
+    height: 90%;
+    width: 30%;
+    top: 7.5%;
+    right: 2%;
+    border-radius: 2%;
+}
+
+.titre{
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    top: 2%;
+    text-align: center;
+    color: white;
+}
+
+.classement{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.cd1{
+    position: absolute;
+    top: 10%;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    left: 5%;
+}
+
+.cd2{
+    position: absolute;
+    top: 40%;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    left: 5%;
+    background-color: aqua;
+
+}
+
+.cd3{
+    position: absolute;
+    top : 70%;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    left: 5%;
+    background-color: aqua;
+
+}
+
+.cd4{
+    position: absolute;
+    top: 10%;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    right: 5%;
+    background-color: aqua;
+
+}
+
+.cd5{
+    position: absolute;
+    top: 40%;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    right: 5%;
+    background-color: aqua;
+
+}
+
+.cd6{
+    position: absolute;
+    top : 70%;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    right: 5%;
+    background-color: aqua;
+
+}
+
+.albmimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.almimg.selected {
+    position: absolute;
+    border: 2px solid blue;
+}
