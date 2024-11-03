@@ -59,13 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     volumeUpButton.addEventListener("click", function() {
         if (currentSong) {
-            currentSong.volume = Math.min(currentSong.volume + 0.1, 1); 
+            currentSong.volume = Math.min(currentSong.volume + 0.05, 1); 
         }
     });
 
     volumeDownButton.addEventListener("click", function() {
         if (currentSong) {
-            currentSong.volume = Math.max(currentSong.volume - 0.1, 0); 
+            currentSong.volume = Math.max(currentSong.volume - 0.05, 0); 
         }
     });
 

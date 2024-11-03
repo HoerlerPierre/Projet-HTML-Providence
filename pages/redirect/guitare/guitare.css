@@ -3,7 +3,6 @@
 |image de fond & retour|
 >----------------------<
 */
-
 .retour{
     background-color: rgb(49, 49, 49);
     border: none;
@@ -102,4 +101,14 @@ body {
     height: 80%;
     right: 10%;
     top: 10%;
+}
+
+.info-content {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.info-content.active {
+    display: block;
 }

@@ -1,6 +1,17 @@
-// slide des guitares
+// slide des guitares et informations
 
 let currentSlide = 0;
+
+function updateInfoBox() {
+    const infos = document.querySelectorAll('.info-content');
+    infos.forEach((info, index) => {
+        if (index === currentSlide) {
+            info.classList.add('active');
+        } else {
+            info.classList.remove('active');
+        }
+    });
+}
 
 function slideLeft() {
     const slider = document.querySelector('.slider');
@@ -12,6 +23,7 @@ function slideLeft() {
     }
     const slideWidth = document.querySelector('.slide').clientWidth;
     slider.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
+    updateInfoBox();
 }
 
 function slideRight() {
@@ -24,5 +36,7 @@ function slideRight() {
     }
     const slideWidth = document.querySelector('.slide').clientWidth;
     slider.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
+    updateInfoBox();
 }
 
+updateInfoBox();
