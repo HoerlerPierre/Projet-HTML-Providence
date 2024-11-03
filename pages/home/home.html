@@ -70,21 +70,31 @@
                 </div>
 
                 <div class="div-cnt">
-                    <h1 class="clickable-text"
-                    data-url="../redirect/guitare/guitare.html" 
-                    onclick="redirectAndHideAll(this)">
+                    <h1
+                    class="txtcnt"
+                    onclick="afficherDiv()">
                     Me contacter
                     </h1>
                 </div>
-
+                
             </div>
+        </div>
+
+        <div id="cnt">
+            <div class="zone">
+                <p>Mail : hoerler.pierre.pro@gmail.com</p>
+                <p>Tel : 07 00 00 00 00</p>
+                <p class="bot"> Pour tout contact merci de présiser votre nom et prénom.</p>
+            </div>
+
         </div>
 
         <script>
             function redirectAndHideAll(clickedElement) {
 
-                const allTexts = document.querySelectorAll('.clickable-text');
-                allTexts.forEach(element => element.style.display = 'none');
+                const allElements = document.querySelectorAll('.clickable-text, .div-cnt');
+                allElements.forEach(element => element.style.display = 'none');
+              
                 
                 const image = document.getElementById('image-anim');
                 image.classList.add('move-right');
@@ -94,6 +104,15 @@
                 setTimeout(() => {
                     window.location.href = url;
                 }, 3000);
+            }
+
+            function afficherDiv() {
+                const div = document.getElementById("cnt");
+                if (div.style.display === "none" || div.style.display === "") {
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
             }
         </script>
     </body>
