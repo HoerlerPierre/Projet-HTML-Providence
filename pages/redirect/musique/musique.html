@@ -1,98 +1,161 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="musique.css">
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="musique.css">
+</head>
+<body>
 
-        <a href="../../home/home.html"><button class="retour">retour</button></a>
+<a href="../../home/home.html"><button class="retour">retour</button></a>
 
-        <div class="ipodplace">
-            <div class="screen">
-                <div class="artiste">
-                  <p id="artistName">Artiste: -</p>
-                  <p id="albumName">Album: -</p>
-                  <p id="songTitle">Titre: -</p>
-                </div>
-                <img src="../../../src/img/music/vinyl.png" class="vinyle">
-            </div>
-            
-            <img src="../../../src/img/music/ipod.png" class="ipodsize">
+<div class="ipodplace">
+    <div class="screen">
+        <div class="artiste">
+            <p id="artistName">Artiste: -</p>
+            <p id="albumName">Album: -</p>
+            <p id="songTitle">Titre: -</p>
+        </div>
+        <img src="../../../src/img/music/vinyl.png" class="vinyle" id="vinylImage">
+    </div>
+    <img src="../../../src/img/music/ipod.png" class="ipodsize">
+
+    <div class="controls">
+        <button id="playButton" class="controlButton">Jouer</button>
+        <button id="stopButton" class="controlButton">Stop</button>
+        <button id="volumeUpButton" class="controlButton">Volume +</button>
+        <button id="volumeDownButton" class="controlButton">Volume -</button>
+    </div>
+
+</div>
+
+<div class="boxmusicalltime">
+    <div class="titre">
+        <h1>Musique préférée</h1>
+    </div>
+    <div class="classement">
+
+
+        <div class="cd1 clickable" 
+         data-artist="New Order" 
+         data-album="Single" 
+         data-title="Blue Monday" 
+         data-src="src/alltime/monday/New Order - Blue Monday (Official Lyric Video) (1).mp3">
+            <img src="src/alltime/monday/logo.jpg" class="albmimg">
         </div>
 
-        <div class="boxmusicalltime">
-            <div class="titre">
-                <h1>Musique préférée</h1>
-            </div>
 
-            
-            <div class="classement">
-                <div class="cd1">
-                    <img src="../../../src/img/album/com/megadeth.jpg" class="albmimg">
-                </div>
-
-                <div class="cd2">
-
-                </div>
-
-                <div class="cd3">
-
-                </div>
-
-                <div class="cd4">
-
-                </div>
-
-                <div class="cd5">
-
-                </div>
-
-                <div class="cd6">
-
-                </div>
-
-            </div>
+        <div class="cd2 clickable" 
+         data-artist="Blur" 
+         data-album="Parklife" 
+         data-title="Grils & Boys" 
+         data-src="src/alltime/blur/musique.mp3">
+            <img src="src/alltime/blur/logo.jpg" class="albmimg">
         </div>
 
-        <div class="boxmusimoment">
-            <div class="titre">
-                <h1>Musique du moment</h1>
-            </div>
 
-            <div class="classement">
-                <div class="cd1">
-
-                </div>
-
-                <div class="cd2">
-
-                </div>
-
-                <div class="cd3">
-
-                </div>
-
-                <div class="cd4">
-
-                </div>
-
-                <div class="cd5">
-
-                </div>
-
-                <div class="cd6">
-
-                </div>
-
-            </div>
+        <div class="cd3 clickable"
+         data-artist="Günter Kallmann Chor" 
+         data-album="The Fantastic Sound Of" 
+         data-title="Daydream" 
+         data-src="src/alltime/daydream/Daydream.mp3">
+            <img src="src/alltime/daydream/logo.jpg" class="albmimg">
         </div>
+
+
+        <div class="cd4 clickable" 
+         data-artist="Mötley Crüe" 
+         data-album="Dr. Feelgood" 
+         data-title="Kickstart My Heart" 
+         data-src="src/alltime/motley/Mötley Crüe - Kickstart My Heart - Official Remaster (1).mp3">
+            <img src="src/alltime/motley/logo.jpg" class="albmimg">
+        </div>
+
+
+        <div class="cd5 clickable"
+         data-artist="Metallica" 
+         data-album="Black Album" 
+         data-title="Enter Sandman" 
+         data-src="src/alltime/metallica/Enter Sandman (Remastered).mp3">
+            <img src="src/alltime/metallica/logo.jpg" class="albmimg">
+        </div>
+
+
+        <div class="cd6 clickable"
+         data-artist="Biting Elbows"
+         data-album="Hardcore Henry (Musique de film)"
+         data-title="My Woman" 
+         data-src="src/alltime/women/My Woman.mp3">
+            <img src="src/alltime/women/logo.jpg" class="albmimg">
+        </div>
+
+
+    </div>
+</div>
+
+<div class="boxmusimoment">
+    <div class="titre">
+        <h1>Musique du moment</h1>
+    </div>
+    <div class="classement">
         
-        <script src="musique.js"></script>
-    </body>
+        <div class="cd1 clickable" 
+         data-artist="Radiohead" 
+         data-album="Ok Computer" 
+         data-title="Exit Music (For A Film)" 
+         data-src="src/moment/radiohead/Exit Music (For A Film).mp3">
+            <img src="src/moment/radiohead/logo.jpg" class="albmimg">
+        </div>
+
+
+        <div class="cd2 clickable" 
+         data-artist="Van Halen" 
+         data-album="Van Halen" 
+         data-title="Eruption" 
+         data-src="src/moment/halen/Eruption (2015 Remaster).mp3">
+            <img src="src/moment/halen/logo.jpg" class="albmimg">
+        </div>
+
+
+        <div class="cd3 clickable"
+         data-artist="Rage Against the Machine" 
+         data-album="Rage Against the Machine" 
+         data-title="Killing in the name of" 
+         data-src="src/moment/killing/Killing in the Name.mp3">
+            <img src="src/moment/killing/logo.jpg" class="albmimg">
+        </div>
+
+
+        <div class="cd4 clickable" 
+         data-artist="Megadeth" 
+         data-album="Countdown to Extinction" 
+         data-title="Symphony Of Destruction" 
+         data-src="src/moment/megadeth/Symphony Of Destruction.mp3">
+            <img src="src/moment/megadeth/logo.jpg" class="albmimg">
+        </div>
+
+
+        <div class="cd5 clickable"
+         data-artist="Muse" 
+         data-album="Black Holes and Revelations" 
+         data-title="Supermasive black hole" 
+         data-src="src/moment/muse/Muse - Supermassive Black Hole (Audio).mp3">
+            <img src="src/moment/muse/logo.jpg" class="albmimg">
+        </div>
+
+
+        <div class="cd6 clickable"
+         data-artist="Motörhead et Ozzy Osbourne"
+         data-album="No More Tears"
+         data-title="Hellraiser" 
+         data-src="src/moment/ozzy/Hellraiser.mp3">
+            <img src="src/moment/ozzy/logo.jpg" class="albmimg">
+        </div>
+    </div>
+</div>
+
+<script src="musique.js"></script>
+</body>
 </html>

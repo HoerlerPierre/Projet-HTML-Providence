@@ -69,6 +69,16 @@ body {
     height: 70%;
     bottom: 0%;
     left: 23.5%;
+    transition: transform 0.5s linear; 
+}
+
+.vinyl-rotate {
+    animation: rotateVinyl 2s linear infinite;
+}
+
+@keyframes rotateVinyl {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /*
@@ -127,73 +137,49 @@ body {
     height: 90%;
 }
 
-.cd1{
-    position: absolute;
-    top: 10%;
+.cd1, .cd2, .cd3, .cd4, .cd5, .cd6 {
     width: 40%;
     aspect-ratio: 1 / 1;
-    left: 5%;
+    cursor: pointer;
 }
 
-.cd2{
-    position: absolute;
-    top: 40%;
-    width: 40%;
-    aspect-ratio: 1 / 1;
-    left: 5%;
-    background-color: aqua;
+.cd1 {position: absolute; top: 10%; left: 5%; }
+.cd2 {position: absolute; top: 40%; left: 5%; }
+.cd3 {position: absolute; top: 70%; left: 5%; }
+.cd4 {position: absolute; top: 10%; right: 5%; }
+.cd5 {position: absolute; top: 40%; right: 5%; }
+.cd6 {position: absolute; top: 70%; right: 5%; }
 
-}
-
-.cd3{
-    position: absolute;
-    top : 70%;
-    width: 40%;
-    aspect-ratio: 1 / 1;
-    left: 5%;
-    background-color: aqua;
-
-}
-
-.cd4{
-    position: absolute;
-    top: 10%;
-    width: 40%;
-    aspect-ratio: 1 / 1;
-    right: 5%;
-    background-color: aqua;
-
-}
-
-.cd5{
-    position: absolute;
-    top: 40%;
-    width: 40%;
-    aspect-ratio: 1 / 1;
-    right: 5%;
-    background-color: aqua;
-
-}
-
-.cd6{
-    position: absolute;
-    top : 70%;
-    width: 40%;
-    aspect-ratio: 1 / 1;
-    right: 5%;
-    background-color: aqua;
-
-}
-
-.albmimg{
-    position: absolute;
+.albmimg {
     width: 100%;
     height: 100%;
     cursor: pointer;
     border: 2px solid transparent;
 }
 
-.almimg.selected {
-    position: absolute;
-    border: 2px solid blue;
+.controlButton {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
 }
+
+.controls {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+
+.selected {
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+}
+
