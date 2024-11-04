@@ -79,15 +79,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const songSrc = element.getAttribute("data-src");
 
             updateInfo(artist, album, title, songSrc);
-            stopVinylRotation(); // Arrêter la rotation du vinyle quand une nouvelle chanson est sélectionnée
+            stopVinylRotation(); 
 
-            // Ajouter le style de sélection à l'image cliquée
             const imgElement = element.querySelector(".albmimg");
             selectImage(imgElement);
         });
     });
 
-    // Arrêter la rotation du vinyle quand la musique se termine
+
     if (currentSong) {
         currentSong.addEventListener("ended", stopVinylRotation);
     }
